@@ -27,3 +27,12 @@ to activate my venv in windows
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 . .\venv\Scripts\Activate.ps1
 
+
+
+
+#
+git switch -c branch_1
+# check the difference before and after the change 
+meld. 
+#show the changes
+git log
