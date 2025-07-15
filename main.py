@@ -9,12 +9,13 @@ data=np.loadtxt(fname="data/inflammation-01.csv", delimiter=",")
 print(data)
 print(data.shape)
 
-daily_min_var = daily_min(data)
-daily_max_var = daily_max(data)
-daily_mean_var = daily_mean(data)
+daily_min_var = daily_min(data)#
+daily_max_var = daily_max(data)#
+daily_mean_var = daily_mean(data)#
 
-print("Daily Min:", daily_min_var)
-print("Daily Max:", daily_max_var)          
+
+print("Daily Min:", daily_min_var)#
+print("Daily Max:", daily_max_var)        #  
 print("Daily Mean:", daily_mean_var)
 
 import numpy.testing as npt
