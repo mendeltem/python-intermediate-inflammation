@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the following metadata."
+title: "Your Project Title"
+version: "1.0.0"
+doi: "10.5281/zenodo.1234567"  # Optional, if you published it on Zenodo
+date-released: 2025-07-22
+
+authors:
+  - family-names: Lastname
+    given-names: Firstname
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # optional
+
+keywords:
+  - keyword1
+  - keyword2
+  - keyword3
+
+license: MIT  # or your actual license
+repository-code: "https://github.com/yourusername/your-repo-name"
