@@ -16,6 +16,7 @@ Several tests have been implemented already, some of which are currently failing
 These failing tests set out the requirements for the additional code to be implemented during the workshop.
 
 The tests should be run using `pytest`, which will be introduced during the workshop.
+<<<<<<< HEAD
 
 
 
@@ -36,3 +37,5 @@ git switch -c branch_1
 meld. 
 #show the changes
 git log
+=======
+>>>>>>> 60f6114c7b4b059623b5562062c3e6829b0184ab
