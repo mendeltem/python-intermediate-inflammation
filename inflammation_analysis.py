@@ -2,13 +2,11 @@
 """Software for managing and analysing patients' inflammation data in our imaginary hospital."""
 
 import argparse
-import os
-
 from inflammation import models, views
 from inflammation.compute_data import analyse_data
 
 
-def main(args):
+def main(parsed_args):
     """The MVC Controller of the patient inflammation data system.
 
     The Controller is responsible for:
@@ -25,12 +23,14 @@ def main(args):
         return
 
     for filename in infiles:
+    for filename in parsed_args.infiles:
         inflammation_data = models.load_csv(filename)
 
         view_data = {
             'average': models.daily_mean(inflammation_data),
             'max': models.daily_max(inflammation_data),
-            'min': models.daily_min(inflammation_data)
+            'min': models.daily_min(inflammation_data),
+            **models.s_dev(inflammation_data)
         }
 
         views.visualize(view_data)
